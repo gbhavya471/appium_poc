@@ -1,0 +1,20 @@
+{
+  "server": "hub-cloud.browserstack.com",
+  "username": "bhavyag_s5W0qT",
+  "access_key": "xHcn2eY8LwpTAtu5pLDn",
+
+  "capabilities": {
+    "project": "First TestNg iOS Project",
+    "build": "browserstack-build-Ios",
+    "name": "first_test",
+    "browserstack.debug": true,
+    "app": "bs://07d455b169d663da17e13327d8f1b924fbe3b7b6"
+  },
+
+  "environments": [
+    { 
+      "device": "iPhone 11 Pro",
+      "os_version": "13"
+    }
+  ]
+}

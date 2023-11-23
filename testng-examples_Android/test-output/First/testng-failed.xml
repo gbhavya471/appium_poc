@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [First]" guice-stage="DEVELOPMENT">
+  <test name="FirstTest">
+    <classes>
+      <class name="com.browserstack.run_first_test.android.FirstTest"/>
+    </classes>
+  </test> <!-- FirstTest -->
+  <test name="FirstTest(failed)">
+    <classes>
+      <class name="com.browserstack.run_first_test.android.FirstTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="test"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.browserstack.run_first_test.android.FirstTest -->
+    </classes>
+  </test> <!-- FirstTest(failed) -->
+</suite> <!-- Failed suite [First] -->

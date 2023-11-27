@@ -1,8 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 54.818 s <<< FAILURE! - in TestSuite
-test(com.browserstack.run_first_test.android.FirstTest)  Time elapsed: 3.84 s  <<< FAILURE!
-java.lang.AssertionError: expected [true] but found [false]
-	at com.browserstack.run_first_test.android.FirstTest.test(FirstTest.java:40)
-
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 61.38 s - in TestSuite

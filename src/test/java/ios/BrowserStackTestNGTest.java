@@ -28,6 +28,7 @@ public class BrowserStackTestNGTest {
     JSONArray envs = (JSONArray) config.get("environments");
 
     DesiredCapabilities capabilities = new DesiredCapabilities();
+    System.out.println("The device isss "+ config.get("device"));
 
     Map<String, String> envCapabilities = (Map<String, String>) envs.get(0);
     Iterator it = envCapabilities.entrySet().iterator();

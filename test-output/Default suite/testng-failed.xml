@@ -3,22 +3,11 @@
 <suite parallel="none" name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test" verbose="2">
     <classes>
-      <class name="ios.FirstTest">
+      <class name="com.browserstack.run_first_test.android.FirstTest">
         <methods>
           <include name="test"/>
         </methods>
-      </class> <!-- ios.FirstTest -->
+      </class> <!-- com.browserstack.run_first_test.android.FirstTest -->
     </classes>
   </test> <!-- Default test -->
-  <test parallel="none" name="Default test(failed)">
-    <classes>
-      <class name="ios.FirstTest">
-        <methods>
-          <include name="test"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- ios.FirstTest -->
-    </classes>
-  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

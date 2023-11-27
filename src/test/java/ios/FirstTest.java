@@ -26,6 +26,7 @@ public class FirstTest extends BrowserStackTestNGTest {
     IOSElement textOutput = (IOSElement) new WebDriverWait(driver, 30).until(
         ExpectedConditions.elementToBeClickable(MobileBy.AccessibilityId("Text Output")));
 
+    Thread.sleep(5000);
     Assert.assertEquals(textOutput.getText(),"hello@browserstack.com");
   }
 }

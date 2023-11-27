@@ -9,21 +9,4 @@
       <class name="com.browserstack.run_first_test.android.BrowserStackTestNGTest"/>
     </classes>
   </test> <!-- Surefire test -->
-  <test name="Surefire test(failed)">
-    <classes>
-      <class name="com.browserstack.run_first_test.android.FirstTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="test"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.browserstack.run_first_test.android.FirstTest -->
-      <class name="ios.FirstTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- ios.FirstTest -->
-    </classes>
-  </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->

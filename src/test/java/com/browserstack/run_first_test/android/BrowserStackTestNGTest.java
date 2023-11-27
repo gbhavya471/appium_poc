@@ -33,6 +33,7 @@ public class BrowserStackTestNGTest {
 //        
         JSONArray envs = (JSONArray) config.get("environments");
         Map<String, String> envCapabilities = (Map<String, String>) envs.get(0);
+        System.out.println(envCapabilities) ;
         Iterator it = envCapabilities.entrySet().iterator();
         while (it.hasNext()) {
             Map.Entry pair = (Map.Entry)it.next();
@@ -48,7 +49,8 @@ public class BrowserStackTestNGTest {
             }
         }
 
-        String username = System.getenv("BROWSERSTACK_USERNAME");
+        String username =
+System.getenv("BROWSERSTACK_USERNAME");
         if(username == null) {
             username = (String) config.get("username");
         }
@@ -65,8 +67,7 @@ public class BrowserStackTestNGTest {
 
         driver = new AndroidDriver(new URL("http://"+username+":"+accessKey+"@"+config.get("server")+"/wd/hub"), capabilities);
         capabilities.setCapability("autoGrantPermissions",true);
-//        driver.switchTo().alert();
-//        capabilities.setCapability("autoAcceptAlerts",true);
+
     }
 
     @AfterMethod(alwaysRun=true)
